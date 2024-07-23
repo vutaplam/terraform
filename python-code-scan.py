@@ -1,6 +1,6 @@
 # Unvalidated user input (SQL Injection Vulnerability)
 username = input("Enter username: ")
-password = "demo"
+password = "password"
 
 # Unsafe string formatting (SQL Injection Vulnerability)
 connection = sqlite3.connect("users.db")
