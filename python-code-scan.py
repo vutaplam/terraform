@@ -23,7 +23,7 @@ def download_data(url):
   # Download data using the headers
 
 # Unhandled exceptions (Potential Denial-of-Service)
-def process_data(data):
+def process_data(data)
   try:
     # Process data here
   except Exception as e:
