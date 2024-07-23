@@ -1,24 +1,28 @@
-# Unnecessary use of global variables (Code Smells)
-global_var = 10
+# sample_error.py
 
-def some_function():
-  # Code here doesn't use global_var
-  pass
+def divide_numbers(num1, num2):
+    """Divide num1 by num2 and return the result."""
+    return num1 / num2
 
-# Hardcoded literals (Code Smells)
-magic_number = 42
-if x == magic_number:
-  # Do something
+def add_numbers(a, b):
+    """Add two numbers and return the result."""
+    return a + b
 
-# Unused variables (Code Smells)
-unused_var = "This variable has no purpose"
+def main():
+    try:
+        # Intentional syntax error below
+        result = divide_numbers(10, 0  # Missing closing parenthesis
+        print("Division result:", result)
+    except ZeroDivisionError:
+        print("Error: Division by zero!")
+    
+    # Intentional logic error
+    total = add_numbers(10, "20")  # Adding integer and string
+    print("Sum result:", total)
 
-# Unclosed file (Potential Resource Leak)
-with open("myfile.txt") as f:
-  # Process some lines from the file
+    # Intentional security issue
+    sensitive_data = "password123"
+    print(f"Sensitive data: {sensitive_data}")  # Sensitive data should not be printed
 
-# Unnecessary string concatenation (Potential Performance Issues)
-name = "John"
-greeting = "Hello, " + name + "!"  # Less efficient than string formatting
-
-print("SonarQube might identify these potential issues!")
+if __name__ == "__main__":
+    main()
