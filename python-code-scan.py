@@ -9,7 +9,7 @@ query = f"SELECT * FROM users WHERE username='{username}' AND password='{passwor
 cursor.execute(query)
 result = cursor.fetchone()
 
-if result:
+if result
   print(f"Welcome back, {result[1]}!")  # Potential information disclosure
 else:
   print("Login failed.")
