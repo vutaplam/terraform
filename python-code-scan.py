@@ -8,7 +8,7 @@ def add_numbers(a, b):
     """Add two numbers and return the result."""
     return a + b
 
-def main():
+def main()
     try:
         # Intentional syntax error below
         result = divide_numbers(10, 0  # Missing closing parenthesis
