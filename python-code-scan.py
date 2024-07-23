@@ -9,7 +9,7 @@ def add_numbers(a, b):
     return a + b
 
 def main()
-    try:
+    try
         # Intentional syntax error below
         result = divide_numbers(10, 0  # Missing closing parenthesis
         print("Division result:", result)
