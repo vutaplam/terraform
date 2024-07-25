@@ -1,2 +1,2 @@
 # terraform
-AWS examples using terraform
+Infrastructure As Code examples
