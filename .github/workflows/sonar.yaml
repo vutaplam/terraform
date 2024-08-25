@@ -15,7 +15,7 @@ jobs: # Jobs to run on which operating system
    runs-on: ubuntu-latest
    defaults:
      run: 
-       working-directory: ex1
+       working-directory: aws/ec2-examples/ex1
      
    steps: # Stages to achive a job
     
